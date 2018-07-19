@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Music.in{% endblock%}</title>
+    <!--loads the path of your static files-->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!--header-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topnavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">Kale Cushions</a>
+        </div>
+
+        <!--Items-->
+        <div class="collapse navbar-collapse" id="topnavbar">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="{% url 'home' %}">
+                        <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>&nbsp Gallary
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{% url 'home' %}">
+                        <span class="glyphicon glyphicon-music" aria-hidden="true"></span>&nbsp Music
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                    <a href="{% url 'home' %}">
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp contact-us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block body%}
+{%endblock %}
+</body>
+</html>

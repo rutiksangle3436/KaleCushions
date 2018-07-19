@@ -1,0 +1,12 @@
+{% extends 'home/base.html' %}
+{% load static %}
+<title>{% block title %} Home {% endblock %}</title>
+{% block body %}
+    <div class="col-xs-offset-1 col-xs-10">
+        {% for f in 'home/images/Wallpaper/' %}
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img class="ima-responsive img-thumbnail" src="{% static 'home/images/Wallpaper/1 (1).jpeg' %}" alt="Images" height="300px" width="300px">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

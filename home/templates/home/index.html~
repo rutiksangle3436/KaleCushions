@@ -1,0 +1,19 @@
+{% extends "home/base.html" %}
+{% block title %} KaleCushions/home {% endblock %}
+
+{% block mainbody %}
+{% load staticfiles %}
+		{% for cat in all_catogiries %}
+			<div class="col-md-6">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="static/home/images/{{ cat.catogiry }}.jpg" alt="img" class="img-responsive"/>
+							<figcaption>
+								<h2>{{ cat.name }}</h2>
+								<a href="#">View more</a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+		{% endfor %}
+{% endblock %}

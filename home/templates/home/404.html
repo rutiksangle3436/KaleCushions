@@ -1,0 +1,9 @@
+<img src="{{ item.name }}">
+
+<h1> {{ item.catogiry }} </h1>
+<h3>{{ item.name }}</h3>
+<ul>
+{% for i in all_photos %}
+<li>{{ i }}</li>
+{% endfor %}
+</ul> 

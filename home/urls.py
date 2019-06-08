@@ -7,6 +7,5 @@ urlpatterns = [
 	#home page
     path('', views.index, name='index'),
     
-    #usig id(home/id)
-    path('<str:photo_cat>/',views.usingID, name='usingID'),
+    path('contactus/', views.contactus, name='contactus'),
 ]

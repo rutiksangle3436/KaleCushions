@@ -10,13 +10,7 @@ def index(request):
 	}
 	return render(request, 'home/index.html', context)
 	
-def usingID(request,photo_cat):
-	photos = get_object_or_404(Catogiries,catogiry=photo_cat)
-	
-	photo = Catogiries.objects.get(catogiry=photo_cat)
-	all_photos = Catogiries.objects.all()	
-	
-	context = {'all_photos':all_photos,'item':photo}
-	
-	return render(request, 'home/404.html' , context)
 
+def contactus(request):
+	context = {'all_photos':"All data"}
+	return render(request, 'home/contactus.html', context)

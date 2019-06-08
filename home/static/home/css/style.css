@@ -24,7 +24,7 @@ p {
 	font-weight: 300;
 	line-height: 28px;
 	letter-spacing: 0.2px;
-	color: #252525;
+	color: #fff;
 }
 
 a:hover, a:focus, a:active, a.active {
@@ -97,9 +97,9 @@ section {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
     border-bottom: 1px solid;
-    border-color: #000;
+    border-color: #fff;
     margin: 10px 15px;
     padding: 0 0 2px 0;
 }
@@ -122,7 +122,7 @@ section {
 @media (min-width:768px) {
 	.navbar-default
 	{
-		background-color: lightgoldenrodyellow;
+		background-color: #333;
 		padding: 40px 0 0px;
     	-webkit-transition:padding .3s;
 		-moz-transition:padding .3s;
@@ -492,8 +492,7 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 footer {
     padding: 30px;
-    background-color: lightgoldenrodyellow;    
-}
+    background-color: #333;
 
 footer p {
     color: #B7B7B7;
